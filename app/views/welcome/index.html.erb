@@ -1,0 +1,14 @@
+<h1>Welcome to my Travel Site</h1>
+<p>Stay tuned for cool travel stuff!</p>
+
+<h2>My Homestate is <%= @homestate %></h2>
+
+<ul>
+  <% @countries.each do |country| %>
+    <li><%= country.capitalize %><br><%= image_tag country, alt: "Country Flag", class: "flag" %></li>
+  <% end %>
+</ul>
+
+<% @images.each do |image| %>
+  <%= image_tag image, width: "200px" %>
+<% end %>

@@ -1,0 +1,17 @@
+<style>
+  body {
+    background: <%= @color %>;
+  }
+</style>
+
+<h1>About me</h1>
+<p>Lots of interesting stuffs.</p>
+<p>My favorite color is <%= @color %></p>
+
+
+
+<% if @shoe_size > 12 %>
+  <p>Wow, you have huge feet!</p>
+<% else %>
+  <p>Your shoe size is <%= @shoe_size %></p>
+<% end %>
