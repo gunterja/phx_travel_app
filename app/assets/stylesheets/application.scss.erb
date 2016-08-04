@@ -13,7 +13,35 @@
  *= require_tree .
  *= require_self
  */
+ 
+@import 'variables';
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 .flag {
   width: 150px;
+}
+
+body {
+  background: url(<%= asset_path "bg.jpg" %>);
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+}
+
+div.panel-body p > a {
+  text-decoration: none;
+  color: black;
+  
+  &:hover {
+    color: green;
+  }
 }

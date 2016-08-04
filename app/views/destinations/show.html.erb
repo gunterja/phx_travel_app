@@ -1,0 +1,26 @@
+<p>
+  <strong>City:</strong>
+  <%= @destination.city %>
+</p>
+
+<p>
+  <%= image_tag @destination.photo.url(:medium) %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @destination.country %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @destination.description %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @destination.population %>
+</p>
+
+<%= link_to 'Edit', edit_destination_path(@destination), class: 'btn btn-success btn-sm' %> |
+<%= link_to 'Back', destinations_path, class: 'btn btn-success btn-sm' %>
